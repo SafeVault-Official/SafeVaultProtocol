@@ -3,27 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeVault Protocol | Financial Fortress</title>
+    <title>SafeVault Protocol | Next-Gen Security</title>
     <style>
-        body { background-color: #0a0a0a; color: #d4af37; font-family: sans-serif; text-align: center; margin: 0; }
-        .container { padding: 50px; border: 2px solid #d4af37; margin: 20px; border-radius: 15px; }
-        h1 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 3px; }
-        p { color: #ffffff; font-size: 1.1rem; line-height: 1.6; }
-        .btn { display: inline-block; background: #d4af37; color: #000; padding: 15px 35px; 
-               text-decoration: none; font-weight: bold; border-radius: 5px; margin: 20px; transition: 0.3s; }
-        .btn:hover { background: #fff; transform: scale(1.05); }
+        :root {
+            --primary-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --card-bg: #161616;
+            --text-gray: #b0b0b0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid #333;
+        }
+        h1 { color: var(--primary-gold); margin-bottom: 10px; font-size: 2.5rem; }
+        .tagline { font-style: italic; color: var(--text-gray); }
+        
+        .tg-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .tg-link:hover { opacity: 0.8; transform: translateY(-2px); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--primary-gold); }
+        .card h3 { color: var(--primary-gold); margin-top: 0; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .highlight { color: var(--primary-gold); font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🛡️ SafeVault Protocol</h1>
-        <p>The Ultimate Financial Fortress on BNB Chain.</p>
-        <div style="margin: 30px 0;">
-            <p>🗝️ 24-Hour Anti-Dump Lock</p>
-            <p>💎 3% Dynamic Rewards</p>
-            <p>🚀 Raidar Technology</p>
+
+<div class="container">
+    <header>
+        <h1>SafeVault Protocol</h1>
+        <p class="tagline">Sustainable Growth, Equitable Distribution, Secure Tokenomics</p>
+        <a href="https://t.me/SafeVaultProtocol" target="_blank" class="tg-link">Join Telegram</a>
+    </header>
+
+    <section style="margin-top: 40px; text-align: center;">
+        <h2>The Architecture of Stability</h2>
+        <p>SafeVault is not a hype token; it is a system designed for those who think long-term.</p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🔐 Security-First</h3>
+            <p>Anti-sniper, same-block protection, and pause mechanisms against bot attacks and flash exploits.</p>
         </div>
-        <a href="https://t.me/SafeVaultChat" class="btn">ENTER THE FORTRESS (TELEGRAM)</a>
+        <div class="card">
+            <h3>📈 Tax Efficiency</h3>
+            <p>Taxes apply strictly to <span class="highlight">Buy orders only</span>. Enjoy zero-fee selling and transfers.</p>
+        </div>
+        <div class="card">
+            <h3>💎 3% Holder Rewards</h3>
+            <p>Gas-efficient, account-based reward model that automatically distributes 3% of buys to all holders.</p>
+        </div>
+        <div class="card">
+            <h3>🐳 Anti-Whale System</h3>
+            <p>Maximum transaction limits and a <span class="highlight">24-hour sell-lock</span> mechanism to prevent price manipulation.</p>
+        </div>
+        <div class="card">
+            <h3>🧠 Tech & Audit</h3>
+            <p>Audit-ready, gas-friendly architecture with no hidden functions, no backdoors, and no minting.</p>
+        </div>
+        <div class="card">
+            <h3>🏦 Growth Wallet</h3>
+            <p>Transparent marketing and growth funds dedicated to global expansion and long-term ecosystem health.</p>
+        </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 SafeVault Protocol | Developed for the Long-Term.</p>
+        <p><a href="https://t.me/SafeVaultProtocol" style="color: var(--text-gray);">t.me/SafeVaultProtocol</a></p>
+    </footer>
+</div>
+
 </body>
 </html>
